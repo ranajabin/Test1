@@ -1,0 +1,187 @@
+<mvc:View xmlns:f="sap.f"
+    controllerName="sap.btp.project4.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+    xmlns:form="sap.ui.layout.form"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}" class="sapUiContentPadding">
+					
+                    <content>
+                 <FlexBox alignContent="Center" justifyContent="Center">
+               <VBox>
+<Label text="Enter First Number" class = "Lbl1" ></Label>
+<Input id="inp1" width = "50%" class = "txt1" />
+
+<Label text="Enter Second Number"></Label>
+<Input id="inp2" width = "50%"/>
+<Button text="Sum" press=".onEnter"></Button>
+
+
+<RadioButtonGroup id = "GroupA" columns = "5">
+
+<RadioButton text = "option 1" selected = "true" />
+<RadioButton text = "option 2" />
+<RadioButton text = "option 3" />
+
+</RadioButtonGroup>
+<Link text = "Open Message Box" target = "_blank" href = "https://www.google.com"/>
+</VBox>
+</FlexBox>
+                 
+             <l:BlockLayout id="BlockLayout" background="Dashboard">
+                 <l:BlockLayoutRow accentCells = "Accent1">
+                    <l:BlockLayoutCell id = "Accent1"  width = "2" title = "Block 1">
+
+                  <VBox> 
+                  
+                    <Text text="1. Galactic Gratitude Award "/>
+                    <Text text="*One who understands the pain points/needs of an end user"/>          
+                    <Text text="*One who treats the customer/stake holder right by to giving timely support and service."/>
+                    <Text text="*One who has outstanding and innovative contribution to significantimproving customer centricity and their customer experience and customer satisfcation."/>
+
+                  <ComboBox placeholder="Choose your answer">                 
+                    <core:Item key="" text=" ABC "/>     
+                  </ComboBox>
+         
+           
+                   <Text text=" Reason for your selection"/>
+                  <TextArea text=" Hello " placeholder="Enter Your answer"></TextArea>
+                </VBox>  
+                </l:BlockLayoutCell>
+                </l:BlockLayoutRow>
+                
+                <l:BlockLayoutRow accentCells = "Accent2">
+                <l:BlockLayoutCell id = "Accent2" width = "2" title = "Block2">
+                <VBox >
+                <Text text="2. Pioneer RIX Innovation Award"/>
+                <Text text="*One who sets up the stage for further innovative work"/>
+                <Text text="*One who shows passion to participate in SLI innovation events and share the idea"/>
+                <Text text="*Helping others apart from his/her work."/>
+                <Text text="*Drives the topic in the team both technically and functionally."/>
+
+                <ComboBox placeholder="Select your answer">
+                   <core:Item key="" text="A" />
+                   <core:Item key="" text="B" />
+                </ComboBox>                
+               
+                   <Text text="Reason for your selection"/>
+                   <TextArea text="" placeholder="Enter your answer"></TextArea>
+                </VBox>
+             </l:BlockLayoutCell>
+             </l:BlockLayoutRow>
+
+             <l:BlockLayoutRow accentCells = "Accent3">
+             <l:BlockLayoutCell id = "Accent3" width = "2" title = "Block3">
+                <VBox >
+                  <Text text="3. Culture Champion Award"/>
+                  <Text text="*Have grown fast by adapting to the SAP culture"/>
+                  <Text text="*Have contributed or defined some team process"/>
+                  <Text text="*Motivated others in team to adapt to the team values"/>
+
+                  <ComboBox placeholder="Select your name">
+                     <core:Item key="" text="Purbasha Adhikary"/>
+                     <core:Item key="" text="Ankit Agarwal"/>
+                     <core:Item key="" text="Nisha D"/>
+                     <core:Item key="" text="Amit Diwane"/>
+                     <core:Item key="" text="Kalyani Govindarajula"/>
+                     <core:Item key="" text="Sapna J Kini"/>
+                     <core:Item key="" text="Nikhil Karwa"/>
+                     <core:Item key="" text="Md Saddam Kazmi"/>
+                     <core:Item key="" text="Akash Pal"/>
+                     <core:Item key="" text="Manas Tiwari"/>
+                     <core:Item key="" text="Suryadev Vasudevaviah"/>
+                     <core:Item key="" text="Hemanth Nuthalapati"/>
+                  </ComboBox>    
+        
+                 <Text text="Reason for your Selection"/>
+                 <TextArea text="" placeholder="Enter your answer"/>
+                
+                </VBox>
+                </l:BlockLayoutCell>
+                </l:BlockLayoutRow>
+             
+          <l:BlockLayoutRow accentCells = "Accent4">
+           <l:BlockLayoutCell id = "Accent4" width = "2" title = "Block4">
+          
+            <List
+               headerText = "{i18n>Listtitle}"
+               class = "sapUiResponsiveMargin"
+               width = "auto"
+               items ="{invoice>/Invoices}">
+
+            <items>
+              <ObjectListItem
+              title = "{invoice>Quantity} * {invoice>ProductName}"/>
+            </items>
+
+            </List>    
+         
+             </l:BlockLayoutCell>
+            </l:BlockLayoutRow>
+
+     <l:BlockLayoutRow accentCells = "Accent5">
+     <l:BlockLayoutCell id="Accent5" width = "2" title = "Block5">
+            <VBox>
+            <Table headerText="Table testing" items="{Student_Records>/Student_Record}">
+             <columns>
+               <Column>
+               <Label text="Name"></Label>
+               </Column>
+
+               <Column >
+               <Label text="Roll"></Label>
+               </Column>
+
+               <Column >
+               <Label text="Paper1"></Label>
+               </Column>
+
+               <Column >
+               <Label text="Paper2"></Label>
+               </Column>
+
+               <Column>
+               <Label text="Paper3"></Label>
+               </Column>
+
+               <Column>
+               <Label text="Paper4"></Label>
+               </Column>
+
+               <Column>
+               <Label text="Paper5"></Label>
+               </Column>
+
+             </columns>
+
+<ColumnListItem>
+
+<cells>
+<ObjectIdentifier title="{Student_Records>studentname}" text="{Student_Records>Roll}"></ObjectIdentifier>
+<ObjectIdentifier title="{Student_Records>Roll}"></ObjectIdentifier>
+<Text text="{Student_Records>Paper1}"/>
+<Text text="{Student_Records>Paper2}"/>
+<Text text="{Student_Records>Paper3}"/>
+<Text text="{Student_Records>Paper4}"/>
+<Text text="{Student_Records>Paper5}"/>
+</cells>
+</ColumnListItem>             
+
+
+</Table>
+</VBox>
+              </l:BlockLayoutCell> 
+              </l:BlockLayoutRow>
+              </l:BlockLayout>
+                    </content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

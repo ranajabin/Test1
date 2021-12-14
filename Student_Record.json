@@ -1,0 +1,34 @@
+{
+   "Student_Record" : [
+      {
+            "studentname" :"Rita",
+            "Roll"        :"02",
+            "Paper1"      :"60",
+            "Paper2"      :"90",
+            "Paper3"      :"78",
+            "Paper4"      :"98",
+            "Paper5"      :"87"
+      },
+
+      {
+            "studentname" : "Amisha",
+            "Roll"        : "05",
+            "Paper1"      : "69",
+            "Paper2"      : "79",
+            "Paper3"      : "93",
+            "Paper4"      : "88",
+            "Paper5"      : "68"
+      },
+
+      {
+            "studentname" : "Richa",
+            "Roll"        : "01",
+            "Paper1"      : "93",
+            "Paper2"      : "78",
+            "Paper3"      : "89",
+            "Paper4"      : "99",
+            "Paper5"      : "92"
+      }
+   ]
+
+}

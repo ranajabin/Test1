@@ -1,0 +1,10 @@
+.Lbl1 {
+    font-weight: bold;
+    color: rgb(0, 174, 255)
+}
+
+.sapMInputBaseInner,
+ .txt1 {
+   background: red;
+
+ }
